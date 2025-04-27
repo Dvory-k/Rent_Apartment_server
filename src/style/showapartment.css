@@ -1,0 +1,42 @@
+.apartment-container {
+    background-color: #f9f9f9;
+    border: 1px solid #ffacac;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.apartment-container h1 {
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+}
+
+.apartment-container h4 {
+    font-size: 1.2em;
+    color: #555;
+    margin: 10px 0;
+}
+
+.apartment-container img {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.apartment-container input[type="button"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s;
+}
+
+.apartment-container input[type="button"]:hover {
+    background-color: #0056b3;
+}

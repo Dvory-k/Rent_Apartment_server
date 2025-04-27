@@ -1,0 +1,205 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+/* הגדרות בסיסיות */
+body {
+  /* background-image: url('../public/לוגו33.png'); */
+  font-family: 'Arial', sans-serif; /* גופן נוח */
+  background-color: #f2f2f2; /* צבע רקע בהיר */
+  color: #333; /* צבע טקסט כהה */
+  margin: 0;
+  padding: 0;
+  /* padding-top: 65px; */
+   /* הוסף מרווח בהתאם לגובה ה-nav */
+}
+
+/* כותרות */
+h1, h4 {
+  text-align: center;
+  color: #00686c; /* צבע הכותרות */
+}
+nav {
+    background-color: rgb(0, 112, 101); /* רקע שחור */
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; /* מרכז את הלינקים במרכז האופקי */
+    color: white;
+    position: sticky;
+    top: 0px;
+    bottom: 250px;
+    height: 80px;
+   z-index: 1000; /* שכבת התצוגה של הנאב */
+/* position: relative; */
+}
+/* ניווט */
+img{
+  height: 220px;
+}
+nav a {
+  color: white; 
+  font-size: large;
+  text-decoration: none;
+  /* padding: 10px 15px; */
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+color: #000000; 
+}
+.filter-section {
+  background-color:  rgba(255, 255, 255, 0.9);
+  padding: 20px; 
+  /* margin: 20px; */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  /* border-radius: 8px;  */
+  position: sticky;
+  top: 82px;
+  bottom: 290px;
+  height: 80px;
+ z-index: 1000;
+}
+/* כרטיסים */
+.card {
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: white; 
+  border-radius: 8px; 
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  margin: 15px; 
+  max-width: 300px; 
+  display: inline-block; 
+  transition: transform 0.2s, box-shadow 0.2s; 
+  color: rgb(0, 112, 101);
+}
+
+.card:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.card img {
+  width: 100%; 
+  height: 200px; 
+  object-fit: cover; 
+}
+
+.card-content {
+  padding: 15px; 
+}
+
+/* כפתורים */
+button,
+input[type="submit"],
+input[type="button"] {
+  background-color: #00927c; 
+  color: white; 
+  border: solid #f2f2f2 1px; 
+  border-radius: 5px; 
+  padding: 10px 20px; 
+  margin: 3px;
+  cursor: pointer; 
+  transition: background-color 0.3s, transform 0.2s;
+  width: 200px; 
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover {
+  background-color: #000000; 
+  transform: translateY(-2px); 
+}
+
+/* טפסים */
+form {
+  background-color: white; 
+  border-radius: 8px; 
+  padding: 20px; 
+  margin: 20px auto; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  max-width: 500px; 
+}
+
+/* שדות טופס */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+select {
+  width: calc(100% - 20px); 
+  padding: 10px; 
+  margin: 10px 0; 
+  border: 1px solid #ddd; 
+  border-radius: 5px; 
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+select:focus {
+  border-color: #008566; 
+  outline: none; 
+}
+
+/* סלקטים - צר יותר */
+select {
+  width: 150px; 
+}
+.filter-section select,input{
+  width: 300px;
+  margin: 0px;
+  background-color: rgba(249, 255, 254, 0.9);
+}
+/* רספונסיביות */
+@media (max-width: 600px) {
+  nav {
+      flex-direction: column;
+  }
+
+  .card {
+      width: 90%; 
+  }
+  
+  form {
+      width: 90%; 
+  }
+}
+
